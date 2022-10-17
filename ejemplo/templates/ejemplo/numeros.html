@@ -7,6 +7,14 @@
     <title>Document</title>
 </head>
 <body>
-    HOLA ESTO ES UN SALUDO DESDE UN TEMPLATE!!!! {{nombre}} {{apellido}}
+    
+    {% for n in lista_numeros %}
+        {% if n < 6 %}
+            <p style="color:red"> NUMEROS BAJOS {{n}}</p>
+        {% else %} <p style="color:blue"> NUMEROS ALTOS {{n}}</p>
+        {% endif %}
+
+    {% endfor %}
+
 </body>
 </html>
